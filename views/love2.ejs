@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="shortcut icon" href="http://1337vn.com/favicon.ico" type="image/x-icon" />
+	<title>Thắng ♥ Vi</title>
+
+	<style type="text/css">
+		@font-face {
+			font-family: digit;
+			src: url('digital-7_mono.ttf') format("truetype");
+		}
+	</style>
+
+	<link href="mylove2/css/default.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="mylove2/js/jquery.js"></script>
+	<script type="text/javascript" src="mylove2/js/garden.js"></script>
+	<script type="text/javascript" src="mylove2/js/functions.js"></script>
+
+</head>
+
+<body>
+	<audio autoplay="autopaly">
+		<source src="mylove2/music/lamvoanhnhe.mp3" type="audio/mp3">
+	</audio>
+	<div id="main">
+		<div id="mainDiv">
+			<div id="content">
+				<div id="code">
+					<!-- <span class="comments">~</span><br />
+					<span class="space" /><span class="comments">~</span><br /> -->
+					Boy name = Viết <span class="keyword">Thắng</span><br />
+					Girl name = Thảo <span class="keyword">Vi</span><br />
+					Date time = 00:20 13/04/2019;<br />
+					Where place = Bãi Tranh <br />
+					<span class="comments">// Định mệnh cho anh gặp em. </span><br />
+					Ngay khoảnh khắc lần đầu ta gặp nhau;<br />
+					<span class="comments">// Thời gian như đang đứng lại.</span><br />
+					Anh đã trót yêu em mất rồi;<br />
+					<span class="comments">// Con tim anh mách bảo rằng</span><br />
+					Em chính là người con gái anh tìm kiếm bao lâu nay.<br />
+					<span class="comments">// Thời gian cứ trôi đi.</span><br />
+					Anh vẫn không thể ngưng thương nhớ về em;<br />
+					<span class="comments">// Và rồi bất chợt.</span><br />
+					Con tim ta có chung nhịp đập;<br />
+					<span class="comments">// Dù mưa nắng hay giông tố khắp trời.</span><br />
+					<span class="comments">// Cho dù có bất kì chuyện gì xảy ra đi nữa.</span><br />
+					<span class="keyword">Anh</span> cũng muốn em được <span class="keyword">hạnh phúc</span>;<br />
+					<span class="keyword">Trái tim</span> anh sẽ <span class="keyword">không bao giờ thay đổi</span>;<br />
+					<span class="placeholder" /><span class="comments">// Cho dù là ngay bây giờ, ngay lúc này</span><br />
+					<span class="placeholder" /><span class="comments">// Hay tương lai sau này đi nữa...</span><br />
+					<span class="placeholder" />Anh chỉ có một giấc mơ;<br />
+					<span class="comments">// Anh muốn em hạnh phúc mãi mãi bên anh.</span><br />
+					<br>
+					Anh muốn nói với em:<br />
+					<span class="keyword">Vi à, Anh yêu em - mãi mãi;</span><br />
+				</div>
+				<div id="loveHeart">
+					<canvas id="garden"></canvas>
+					<div id="words">
+						<div id="messages">
+							Em à, mình yêu nhau chừng này thời gian rồi đấy. ~
+							<div id="elapseClock"></div>
+						</div>
+						<div id="loveu">
+							I love you forever and ever.<br />
+							<div class="signature">- Thắng đẹp trai<div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div style="text-align:center;margin:0px 0; font:normal 12px/20px 'MicroSoft YaHei';">
+				</div>
+				<script type="text/javascript">
+					var offsetX = $("#loveHeart").width() / 2;
+					var offsetY = $("#loveHeart").height() / 2 - 55;
+					var together = new Date();
+					together.setFullYear(2019, 4, 13);
+					together.setHours(0);
+					together.setMinutes(20);
+					together.setSeconds(0);
+					together.setMilliseconds(0);
+
+					if (!document.createElement('canvas').getContext) {
+						var msg = document.createElement("div");
+						msg.id = "errorMsg";
+						msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+";
+						document.body.appendChild(msg);
+						$("#code").css("display", "none")
+						$("#copyright").css("position", "absolute");
+						$("#copyright").css("bottom", "10px");
+						document.execCommand("stop");
+					} else {
+						setTimeout(function () {
+							startHeartAnimation();
+						}, 5000);
+
+						timeElapse(together);
+						setInterval(function () {
+							timeElapse(together);
+						}, 500);
+
+						adjustCodePosition();
+						$("#code").typewriter();
+					}
+				</script>
+</body>
+
+</html>
