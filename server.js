@@ -28,3 +28,7 @@ app.get('/love2', function(req, res) {
 app.get('/day-la-vi', function(req, res) {
   res.render('daylavi');
 })
+
+app.get('/wedding', function(req, res) {
+  res.render('wedding');
+})
